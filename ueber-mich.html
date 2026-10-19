@@ -2,57 +2,166 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Über mich | Admin-Bewerbung</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Über mich · Admin-Bewerbung · GRAND RP</title>
+  <meta name="description" content="Wer hinter der Bewerbung steht: Leon alias Scott Sanchez – 18 Jahre, angehender Berufskraftfahrer, aktiv in THW und FFW.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#07070a">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="GRAND RP · Admin-Bewerbung">
+  <meta property="og:title" content="Über mich · Scott Sanchez">
+  <meta property="og:description" content="Ruhig bleiben. Fair handeln. Eine kurze persönliche Vorstellung.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..600&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>(function(d){d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.dataset.theme=t}catch(e){}})(document.documentElement);</script>
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="logo" href="index.html"><span>G</span><b>GRAND RP</b><small>ADMIN APPLICATION</small></a>
-      <nav class="main-nav" aria-label="Hauptnavigation">
-        <a href="index.html">Start</a><a class="active" href="ueber-mich.html">Über mich</a><a href="voraussetzungen.html">Voraussetzungen</a><a href="erfahrung.html">Erfahrung</a><a href="bewerbung.html">Bewerbung</a>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="backdrop" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="GRAND RP Admin-Bewerbung – zur Startseite">
+        <img src="assets/img/scott-sanchez-logo-96.webp" alt="" width="38" height="38">
+        <span><strong>GRAND RP</strong><small>Admin-Bewerbung</small></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="ueber-mich.html" aria-current="page">Über mich</a></li>
+          <li><a href="voraussetzungen.html">Voraussetzungen</a></li>
+          <li><a href="erfahrung.html">Erfahrung</a></li>
+          <li><a href="bewerbung.html">Bewerbung</a></li>
+        </ul>
       </nav>
-      <div class="header-code">#ADM-001<br><i>2026</i></div>
-    </header>
-
-    <main class="content-page">
-      <div class="page-intro">
-        <p class="kicker"><span></span> Kapitel 01 / Profil</p>
-        <h1>Wer hinter<br><em>der Bewerbung</em><br>steht.</h1>
-        <p>Eine kurze persönliche Vorstellung als Grundlage für meine Bewerbung im GRAND-RP-Adminteam.</p>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Helles Design aktivieren">
+          <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Menü öffnen">
+          <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
       </div>
+    </div>
+  </header>
 
-      <div class="profile-layout">
-        <section class="profile-card">
-          <div class="profile-top"><span>PERSONAL FILE</span><span>01 / 05</span></div>
-          <div class="profile-avatar">
-            <img src="scott-sanchez-logo.png" alt="Scott Sanchez Logo">
+  <main id="inhalt">
+    <section class="page-hero container" aria-labelledby="page-title">
+      <nav class="breadcrumb" aria-label="Brotkrumen" data-reveal><a href="index.html">Start</a><span aria-hidden="true">/</span><span aria-current="page">Über mich</span></nav>
+      <p class="eyebrow" data-reveal><span class="chapter">Kapitel 01</span> Profil</p>
+      <h1 class="display display-sm" id="page-title" data-reveal style="--d:1">Wer hinter<br><em>der Bewerbung</em> steht.</h1>
+      <p class="lead" data-reveal style="--d:2">Eine kurze persönliche Vorstellung als Grundlage für meine Bewerbung im GRAND-RP-Adminteam.</p>
+    </section>
+
+    <div class="container profile-layout">
+      <aside class="card profile-card" aria-labelledby="profile-title" data-reveal>
+        <div class="profile-avatar">
+          <img src="assets/img/scott-sanchez-logo-800.webp" alt="Wappen von Scott Sanchez" width="800" height="800">
+          <span class="tag tag-success"><span class="pulse-dot" aria-hidden="true"></span> Bewerber · 2026</span>
+        </div>
+        <div class="profile-name">
+          <h2 id="profile-title">Leon</h2>
+          <span class="tag">18 Jahre</span>
+        </div>
+        <p class="profile-handle">alias Scott Sanchez</p>
+        <dl class="data-list">
+          <div><dt>Nickname</dt><dd>Scott Sanchez</dd></div>
+          <div>
+            <dt>Discord</dt>
+            <dd>
+              leonn13725
+              <button class="copy-btn" type="button" data-copy="leonn13725" aria-label="Discord-Namen kopieren">
+                <svg class="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+                <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+              </button>
+            </dd>
           </div>
-          <h2>Mein Profil</h2>
-          <div class="profile-line"><span>Name</span><b>Leon</b></div>
-          <div class="profile-line"><span>Alter</span><b>18 Jahre</b></div>
-          <div class="profile-line"><span>Nickname</span><b>Scott Sanchez</b></div>
-          <div class="profile-line"><span>Discord</span><b>leonn13725</b></div>
-          <div class="profile-line"><span>Spieler-ID</span><b>170396</b></div>
-          <div class="profile-line"><span>Ausbildung</span><b>Berufskraftfahrer</b></div>
-          <div class="profile-line"><span>Hobbys</span><b>THW · FFW · Programmieren · Zocken</b></div>
+          <div><dt>Spieler-ID</dt><dd>170396</dd></div>
+          <div><dt>Ausbildung</dt><dd>Berufskraftfahrer</dd></div>
+        </dl>
+        <div class="chips" aria-label="Hobbys" role="list">
+          <span class="tag" role="listitem">THW</span>
+          <span class="tag" role="listitem">FFW</span>
+          <span class="tag" role="listitem">Programmieren</span>
+          <span class="tag" role="listitem">Zocken</span>
+        </div>
+      </aside>
+
+      <div class="profile-content">
+        <section aria-labelledby="attitude-title">
+          <p class="eyebrow" data-reveal>Meine Haltung</p>
+          <h2 class="h2" id="attitude-title" data-reveal style="--d:1">Ruhig bleiben.<br><em>Fair handeln.</em></h2>
+          <div class="prose" data-reveal style="--d:2">
+            <p>Ich bin <strong>Leon, 18 Jahre alt</strong>, und bewerbe mich als Admin auf GRAND RP. Neben meiner Ausbildung zum Berufskraftfahrer verbringe ich meine Freizeit mit meinen Hobbys THW, FFW, Programmieren und Zocken.</p>
+            <p>Durch meine Interessen im THW und in der FFW sind Teamarbeit, Hilfsbereitschaft und ein verantwortungsbewusstes Handeln für mich besonders wichtig. Beim Programmieren arbeite ich gerne konzentriert und lösungsorientiert, während ich beim Zocken den gemeinsamen Spielspaß und faires Verhalten schätze.</p>
+            <p>Als Admin möchte ich Spielern <strong>auf Augenhöhe</strong> begegnen. Für mich bedeutet Moderation, Situationen aufmerksam zu beurteilen, Regeln konsequent anzuwenden und trotzdem menschlich zu bleiben.</p>
+          </div>
         </section>
 
-        <section class="prose-block">
-          <p class="kicker">Meine Haltung</p>
-          <h2>Ruhig bleiben.<br><em>Fair handeln.</em></h2>
-          <p>Ich bin Leon, 18 Jahre alt, und bewerbe mich als Admin auf GRAND RP. Neben meiner Ausbildung zum Berufskraftfahrer verbringe ich meine Freizeit mit meinen Hobbys THW, FFW, Programmieren und Zocken.</p>
-          <p>Durch meine Interessen im THW und in der FFW sind Teamarbeit, Hilfsbereitschaft und ein verantwortungsbewusstes Handeln für mich besonders wichtig. Beim Programmieren arbeite ich gerne konzentriert und lösungsorientiert, während ich beim Zocken den gemeinsamen Spielspaß und faires Verhalten schätze.</p>
-          <p>Als Admin möchte ich Spielern auf Augenhöhe begegnen. Für mich bedeutet Moderation, Situationen aufmerksam zu beurteilen, Regeln konsequent anzuwenden und trotzdem menschlich zu bleiben.</p>
-          <div class="quote">„Gutes RP entsteht dort, wo Regeln Sicherheit geben und Menschen trotzdem Raum für ihre Geschichten haben.“</div>
+        <section class="values" aria-label="Was mir wichtig ist">
+          <article class="card spotlight value-card" data-reveal>
+            <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></svg></span>
+            <h3>Teamarbeit</h3>
+            <p>Aus THW und FFW weiß ich: Gute Ergebnisse entstehen gemeinsam.</p>
+          </article>
+          <article class="card spotlight value-card" data-reveal style="--d:1">
+            <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6C19 16.6 12 21 12 21z"/></svg></span>
+            <h3>Hilfsbereitschaft</h3>
+            <p>Spielern bei Fragen und Problemen ansprechbar zur Seite stehen.</p>
+          </article>
+          <article class="card spotlight value-card" data-reveal style="--d:2">
+            <span class="icon-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span>
+            <h3>Verantwortung</h3>
+            <p>Entscheidungen bewusst treffen – konsequent und trotzdem menschlich.</p>
+          </article>
         </section>
+
+        <figure class="card quote-card" data-reveal>
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote>Gutes RP entsteht dort, wo Regeln Sicherheit geben und Menschen trotzdem Raum für ihre Geschichten haben.</blockquote>
+          <figcaption>— Leon / Scott Sanchez</figcaption>
+        </figure>
       </div>
+    </div>
 
-      <div class="page-next"><a href="voraussetzungen.html"><span>Als Nächstes</span><b>Voraussetzungen prüfen →</b></a></div>
-    </main>
+    <nav class="pager container" aria-label="Kapitel">
+      <a class="card pager-link prev" href="index.html">
+        <small>Zurück</small>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Start</span>
+      </a>
+      <a class="card pager-link next" href="voraussetzungen.html">
+        <small>Weiter · Kapitel 02</small>
+        <span>Voraussetzungen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </nav>
+  </main>
 
-    <footer class="site-footer"><span>GRAND RP / ADMIN APPLICATION</span><span>PRIVATE DOCUMENT · 2026</span></footer>
-  </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/img/scott-sanchez-logo-96.webp" alt="" width="32" height="32" loading="lazy">
+        <div><strong>GRAND RP · Admin-Bewerbung</strong><small>Scott Sanchez · ID 170396</small></div>
+      </div>
+      <nav aria-label="Fußzeile">
+        <ul>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="voraussetzungen.html">Voraussetzungen</a></li>
+          <li><a href="erfahrung.html">Erfahrung</a></li>
+          <li><a href="bewerbung.html">Bewerbung</a></li>
+        </ul>
+      </nav>
+      <p class="footer-meta">Privates Dokument · 2026</p>
+    </div>
+  </footer>
 </body>
 </html>
