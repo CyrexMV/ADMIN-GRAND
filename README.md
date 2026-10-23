@@ -23,6 +23,15 @@ favicon.svg
 apple-touch-icon.png
 ```
 
+## IC / OOC
+
+Alle Angaben sind klar nach Rollenspiel-Ebene getrennt und farblich markiert:
+
+- **IC – In Character** (Gold): alles zum Charakter *Scott Sanchez* – Charaktername, Spieler-ID, Organisationen (USSS, LSPD, FIB) sowie die IC-bezogenen Fragen 03–05.
+- **OOC – Out of Character** (Blau): alles zu *Leon* als Person bzw. Spieler – Name, Alter, Discord, Ausbildung, Hobbys, Voraussetzungen, Verfügbarkeit, Regelkenntnis und Motivation (Fragen 01–02).
+
+Technisch: `.badge-ic` / `.badge-ooc` für Markierungen, `.zone-ic` / `.zone-ooc` für ganze Bereiche (inkl. farbigem Kartenstreifen), `.zone-head` für Bereichsüberschriften.
+
 ## Features
 
 - **Hell- & Dunkelmodus** per Umschalter (wird im Browser gemerkt), umgesetzt mit `light-dark()`

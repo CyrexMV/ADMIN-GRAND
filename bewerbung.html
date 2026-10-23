@@ -60,7 +60,7 @@
       <nav class="breadcrumb" aria-label="Brotkrumen" data-reveal><a href="index.html">Start</a><span aria-hidden="true">/</span><span aria-current="page">Bewerbung</span></nav>
       <p class="eyebrow" data-reveal><span class="chapter">Kapitel 04</span> Vollständige Bewerbung</p>
       <h1 class="display display-sm" id="page-title" data-reveal style="--d:1">Die komplette <em>Bewerbung.</em></h1>
-      <p class="lead" data-reveal style="--d:2">Alle geforderten Informationen und Fragen auf einen Blick. Meine persönlichen Angaben und Antworten sind hier zusammengefasst.</p>
+      <p class="lead" data-reveal style="--d:2">Alle geforderten Informationen und Fragen auf einen Blick. Meine persönlichen Angaben und Antworten sind hier zusammengefasst – klar getrennt nach OOC- und IC-Informationen.</p>
     </section>
 
     <div class="container app-layout">
@@ -68,12 +68,16 @@
         <nav aria-label="Inhalt dieser Seite">
           <p class="eyebrow">Inhalt</p>
           <ol>
-            <li><a href="#daten">Persönliche Daten</a></li>
-            <li><a href="#frage-1">01 · Online-Zeiten</a></li>
-            <li><a href="#frage-2">02 · Regelwerk</a></li>
-            <li><a href="#frage-3">03 · Organisationen</a></li>
-            <li><a href="#frage-4">04 · RP-Leben verlassen</a></li>
-            <li><a href="#frage-5">05 · Unternehmen verkaufen</a></li>
+            <li class="toc-group">Persönliche Daten</li>
+            <li><a class="zone-ooc" href="#daten-ooc">OOC-Informationen</a></li>
+            <li><a class="zone-ic" href="#daten-ic">IC-Informationen</a></li>
+            <li class="toc-group">Antworten</li>
+            <li><a class="zone-ooc" href="#frage-1">01 · Online-Zeiten</a></li>
+            <li><a class="zone-ooc" href="#frage-2">02 · Regelwerk</a></li>
+            <li><a class="zone-ic" href="#frage-3">03 · Organisationen</a></li>
+            <li><a class="zone-ic" href="#frage-4">04 · RP-Leben verlassen</a></li>
+            <li><a class="zone-ic" href="#frage-5">05 · Unternehmen verkaufen</a></li>
+            <li class="toc-group">Abschluss</li>
             <li><a href="#schluss">Schlusswort</a></li>
           </ol>
         </nav>
@@ -91,31 +95,46 @@
             <span>01</span>
             <div><p class="eyebrow">Informationen</p><h2 class="h3" id="daten-title">Persönliche Daten</h2></div>
           </div>
-          <dl class="data-grid">
-            <div class="card spotlight" data-reveal><dt>Dein Reallife Name</dt><dd>Leon</dd></div>
-            <div class="card spotlight" data-reveal style="--d:1"><dt>Dein Alter</dt><dd>18 Jahre</dd></div>
-            <div class="card spotlight" data-reveal style="--d:2">
-              <dt>Discord Name</dt>
-              <dd>
-                leonn13725
-                <button class="copy-btn" type="button" data-copy="leonn13725" aria-label="Discord-Namen kopieren">
+          <div class="app-zone zone-ooc" id="daten-ooc">
+            <div class="zone-head" data-reveal>
+              <span class="badge badge-ooc"><abbr title="Out of Character">OOC</abbr></span>
+              <div><h3>OOC-Informationen</h3><p>Angaben zu mir als Person – außerhalb des Rollenspiels.</p></div>
+            </div>
+            <dl class="data-grid">
+              <div class="card spotlight" data-reveal><dt>Dein Reallife Name</dt><dd>Leon</dd></div>
+              <div class="card spotlight" data-reveal style="--d:1"><dt>Dein Alter</dt><dd>19 Jahre</dd></div>
+              <div class="card spotlight" data-reveal style="--d:2">
+                <dt>Discord Name</dt>
+                <dd>
+                  leonn13725
+                  <button class="copy-btn" type="button" data-copy="leonn13725" aria-label="Discord-Namen kopieren">
                   <svg class="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
                   <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
                 </button>
-              </dd>
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="app-zone zone-ic" id="daten-ic">
+            <div class="zone-head" data-reveal>
+              <span class="badge badge-ic"><abbr title="In Character">IC</abbr></span>
+              <div><h3>IC-Informationen</h3><p>Angaben zu meinem Charakter auf GRAND RP.</p></div>
             </div>
-            <div class="card spotlight" data-reveal style="--d:3"><dt>Dein Nickname</dt><dd>Scott Sanchez</dd></div>
-            <div class="card spotlight" data-reveal style="--d:4">
-              <dt>Deine ID</dt>
-              <dd>
-                170396
-                <button class="copy-btn" type="button" data-copy="170396" aria-label="Spieler-ID kopieren">
+            <dl class="data-grid">
+              <div class="card spotlight" data-reveal><dt>Dein Nickname</dt><dd>Scott Sanchez</dd></div>
+              <div class="card spotlight" data-reveal style="--d:1">
+                <dt>Deine ID</dt>
+                <dd>
+                  170396
+                  <button class="copy-btn" type="button" data-copy="170396" aria-label="Spieler-ID kopieren">
                   <svg class="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
                   <svg class="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
                 </button>
-              </dd>
-            </div>
-          </dl>
+                </dd>
+              </div>
+            </dl>
+          </div>
         </section>
 
         <section class="app-section" aria-labelledby="antworten-title">
@@ -124,65 +143,79 @@
             <div><p class="eyebrow">Zusätzliche Informationen</p><h2 class="h3" id="antworten-title">Meine Antworten</h2></div>
           </div>
 
-          <div class="qa-list">
-            <article class="card qa" id="frage-1" data-reveal>
-              <span>01</span>
-              <div>
-                <h3>Zu welchen Zeiten bist du online?</h3>
-                <div class="prose">
-                  <p>Unter der Woche bin ich jeden Tag abends von <strong>20:00 bis 23:00 Uhr</strong> online.</p>
-                  <p>Am Wochenende kann ich meistens den ganzen Tag online sein. Dadurch bin ich samstags und sonntags zeitlich flexibler und kann das Team auch über den Abend hinaus unterstützen.</p>
-                  <p>Insgesamt kann ich mich regelmäßig und zuverlässig auf die Aufgaben als Admin konzentrieren. Mir ist wichtig, während meiner Onlinezeit aufmerksam erreichbar zu sein und Anfragen nicht einfach unbeachtet zu lassen.</p>
+          <div class="app-zone zone-ooc">
+            <div class="zone-head" data-reveal>
+              <span class="badge badge-ooc"><abbr title="Out of Character">OOC</abbr></span>
+              <div><h3>OOC-Fragen</h3><p>Verfügbarkeit und Regelkenntnis – meine Einschätzung als Spieler.</p></div>
+            </div>
+            <div class="qa-list">
+              <article class="card qa" id="frage-1" data-reveal>
+                <span>01</span>
+                <div>
+                  <h3>Zu welchen Zeiten bist du online?</h3>
+                  <div class="prose">
+                    <p>Unter der Woche bin ich jeden Tag abends von <strong>20:00 bis 23:00 Uhr</strong> online.</p>
+                    <p>Am Wochenende kann ich meistens den ganzen Tag online sein. Dadurch bin ich samstags und sonntags zeitlich flexibler und kann das Team auch über den Abend hinaus unterstützen.</p>
+                    <p>Insgesamt kann ich mich regelmäßig und zuverlässig auf die Aufgaben als Admin konzentrieren. Mir ist wichtig, während meiner Onlinezeit aufmerksam erreichbar zu sein und Anfragen nicht einfach unbeachtet zu lassen.</p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <article class="card qa" id="frage-2" data-reveal>
-              <span>02</span>
-              <div>
-                <h3>Wie schätzt du dein Wissen im Bereich Regelwerk ein?</h3>
-                <div class="prose">
-                  <p>Die Regeln kenne ich meines Wissens nach gut. Durch meine Erfahrungen in verschiedenen Organisationen habe ich bereits häufig mit Regeln und internen Abläufen gearbeitet.</p>
-                  <p>Es gibt aber auch Regeln, die ich bei Bedarf noch einmal nachschlagen muss. Für mich ist es wichtig, lieber genau zu prüfen, bevor ich eine falsche Auskunft gebe oder eine Entscheidung vorschnell treffe.</p>
-                  <p>Ich bin bereit, mein Wissen weiter auszubauen und mich regelmäßig mit Änderungen oder Ergänzungen des Regelwerks auseinanderzusetzen.</p>
+              <article class="card qa" id="frage-2" data-reveal>
+                <span>02</span>
+                <div>
+                  <h3>Wie schätzt du dein Wissen im Bereich Regelwerk ein?</h3>
+                  <div class="prose">
+                    <p>Die Regeln kenne ich meines Wissens nach gut. Durch meine Erfahrungen in verschiedenen Organisationen habe ich bereits häufig mit Regeln und internen Abläufen gearbeitet.</p>
+                    <p>Es gibt aber auch Regeln, die ich bei Bedarf noch einmal nachschlagen muss. Für mich ist es wichtig, lieber genau zu prüfen, bevor ich eine falsche Auskunft gebe oder eine Entscheidung vorschnell treffe.</p>
+                    <p>Ich bin bereit, mein Wissen weiter auszubauen und mich regelmäßig mit Änderungen oder Ergänzungen des Regelwerks auseinanderzusetzen.</p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
+          </div>
 
-            <article class="card qa" id="frage-3" data-reveal>
-              <span>03</span>
-              <div>
-                <h3>Welche Erfahrungen hattest du in offiziellen sowie inoffiziellen Organisationen?</h3>
-                <div class="prose">
-                  <p>Ich war als <strong>Abteilungsleiter bei der USSS</strong> unter Tobias Coffe tätig. Außerdem hatte ich die <strong>HR-Leitung beim LSPD</strong> unter Elli Brandenburger inne. Zusätzlich war ich <strong>im FIB</strong> tätig. Dadurch konnte ich verschiedene Organisationsstrukturen kennenlernen und Erfahrungen in den Bereichen Verantwortung, Zusammenarbeit, Kommunikation und internen Abläufen sammeln.</p>
-                  <p>Diese Erfahrungen möchte ich als Admin nutzen, um Situationen ruhig einzuschätzen, Spielern weiterzuhelfen und mich zuverlässig in das Team einzubringen.</p>
+          <div class="app-zone zone-ic">
+            <div class="zone-head" data-reveal>
+              <span class="badge badge-ic"><abbr title="In Character">IC</abbr></span>
+              <div><h3>IC-bezogene Fragen</h3><p>Organisationen, RP-Leben und Unternehmen meines Charakters Scott Sanchez.</p></div>
+            </div>
+            <div class="qa-list">
+              <article class="card qa" id="frage-3" data-reveal>
+                <span>03</span>
+                <div>
+                  <h3>Welche Erfahrungen hattest du in offiziellen sowie inoffiziellen Organisationen?</h3>
+                  <div class="prose">
+                    <p>Ich war als <strong>Abteilungsleiter bei der USSS</strong> unter Tobias Coffe tätig. Außerdem hatte ich die <strong>HR-Leitung beim LSPD</strong> unter Elli Brandenburger inne. Zusätzlich war ich <strong>im FIB</strong> tätig. Dadurch konnte ich verschiedene Organisationsstrukturen kennenlernen und Erfahrungen in den Bereichen Verantwortung, Zusammenarbeit, Kommunikation und internen Abläufen sammeln.</p>
+                    <p>Diese Erfahrungen möchte ich als Admin nutzen, um Situationen ruhig einzuschätzen, Spielern weiterzuhelfen und mich zuverlässig in das Team einzubringen.</p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <article class="card qa" id="frage-4" data-reveal>
-              <span>04</span>
-              <div>
-                <h3>Wärst du bereit, das RP-Leben zu verlassen, um Admin zu werden?</h3>
-                <div class="prose">
-                  <p class="answer-short">Ja, dazu wäre ich bereit.</p>
-                  <p>Wenn ich mich für die Tätigkeit als Admin entscheide, ist mir bewusst, dass die Aufgaben und die Verantwortung im Vordergrund stehen müssen. Ich würde das RP-Leben verlassen, um mich vollständig auf meine Aufgaben als Admin konzentrieren zu können.</p>
-                  <p>So könnte ich mich ohne zusätzliche Verpflichtungen auf das Team, die Spieler und eine faire Bearbeitung von Situationen konzentrieren.</p>
+              <article class="card qa" id="frage-4" data-reveal>
+                <span>04</span>
+                <div>
+                  <h3>Wärst du bereit, das RP-Leben zu verlassen, um Admin zu werden?</h3>
+                  <div class="prose">
+                    <p class="answer-short">Ja, dazu wäre ich bereit.</p>
+                    <p>Wenn ich mich für die Tätigkeit als Admin entscheide, ist mir bewusst, dass die Aufgaben und die Verantwortung im Vordergrund stehen müssen. Ich würde das RP-Leben verlassen, um mich vollständig auf meine Aufgaben als Admin konzentrieren zu können.</p>
+                    <p>So könnte ich mich ohne zusätzliche Verpflichtungen auf das Team, die Spieler und eine faire Bearbeitung von Situationen konzentrieren.</p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-            <article class="card qa" id="frage-5" data-reveal>
-              <span>05</span>
-              <div>
-                <h3>Wärst du bereit, dein Unternehmen zu verkaufen?</h3>
-                <div class="prose">
-                  <p class="answer-short">Ja. Wenn ich ein Unternehmen hätte, würde ich es verkaufen.</p>
-                  <p>Mir ist bewusst, dass man während der Tätigkeit als Admin kein Unternehmen besitzen darf. Diese Vorgabe würde ich akzeptieren und entsprechend umsetzen.</p>
-                  <p>Die Regeln und Entscheidungen des Admin-Teams würde ich respektieren, damit kein Interessenkonflikt mit meiner Tätigkeit als Admin entsteht.</p>
+              <article class="card qa" id="frage-5" data-reveal>
+                <span>05</span>
+                <div>
+                  <h3>Wärst du bereit, dein Unternehmen zu verkaufen?</h3>
+                  <div class="prose">
+                    <p class="answer-short">Ja. Wenn ich ein Unternehmen hätte, würde ich es verkaufen.</p>
+                    <p>Mir ist bewusst, dass man während der Tätigkeit als Admin kein Unternehmen besitzen darf. Diese Vorgabe würde ich akzeptieren und entsprechend umsetzen.</p>
+                    <p>Die Regeln und Entscheidungen des Admin-Teams würde ich respektieren, damit kein Interessenkonflikt mit meiner Tätigkeit als Admin entsteht.</p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -192,7 +225,7 @@
             <p class="lead">Vielen Dank für die Zeit und die Prüfung meiner Bewerbung. Ich freue mich auf eine Rückmeldung des GRAND-RP-Teams und darauf, mich persönlich vorstellen zu dürfen.</p>
             <div>
               <p class="signature">Scott Sanchez</p>
-              <small>Leon · Discord leonn13725 · ID 170396</small>
+              <small>IC: Scott Sanchez · ID 170396 &nbsp;|&nbsp; OOC: Leon · Discord leonn13725</small>
             </div>
           </div>
         </section>
